@@ -1,0 +1,26 @@
+/****************************************************************************************/
+/* Project Infinity - A blockchain based car sharing system                             */
+/* Copyright 2018 Hasan Karadeniz                                                       */
+/* Licensed under MIT (https://github.com/Krdnz57/Project-Infinity/blob/master/LICENSE) */
+/****************************************************************************************/
+
+/*--- Basics ---------------------------------------------------------------------------*/
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-size: 18px;
+    line-height: 1.6;
+
+    color: rgb(93, 96, 99);
+    background-color: rgb(230, 230, 235);
+
+    margin-bottom: 200px;
+}
+
+header, nav, aside, main, footer,
+article, section, figure, figcaption {
+    display: block;
+}

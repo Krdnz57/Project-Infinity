@@ -2,7 +2,7 @@
 Project Infinity ist ein CarSharing System basierend auf der Blockchain.
 Um das Projekt verwenden zu können muss folgende Software vorhanden sein.
 
-* [Remix IDE]
+* Remix IDE
 * Node.js
     * npm
 * Ganache CLI
