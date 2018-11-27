@@ -67,23 +67,80 @@
 
     <section class="projects-section bg-light">
         <div class="container">
-            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                <div class="col-xl-8 col-lg-7">
-                    <img class="img-fluid mb-3 mb-lg-0" src="images/service.jpg" alt="">
-                </div>
-                <div class="col-xl-4 col-lg-5">
-                    <div class="featured-text text-center text-lg-left">
-                        <h4>Risikolose Fahrzeugvermittlung</h4>
-                        <p class="text-black-50 mb-0">
-                            Durch die Zusammenarbeit mit renomierten Versicherungspartnern und KFZ-Werkstätten,
-                            bieten wir Ihnen & Ihrem Auto einen 100% Schutz.
-                            Dank uneres Bewertungssystem & der Verifizierung des Fahrers,
-                            sorgen wir für eine vertrauenswürdige Umgebung - kenne den Fahrer deines
-                            Pkws besser als deinen Nachbarn.
-                        </p>
-                    </div>
-                </div>
+
+          <section class="row">
+            <div class="col-lg-6 mb-3">
+              <form name="sign-up-form" id="sign-up-form">
+                 <div class="form-group">
+                     <div class="row">
+                         <div class="col">
+                             <label for="firstname"><strong>Vorname:</strong></label>
+                             <input class="form-control" type="text" name="firstname" id="firstname" required/>
+                         </div>
+                         <div class="col">
+                             <label for=""><strong>Nachname:</strong></label>
+                             <input class="form-control" type="text" name="familyname" id="familyname" required/>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="form-group">
+                     <label for=""><strong>E-Mail:</strong></label>
+                     <input class="form-control" type="email" name="email" id="email" required/>
+                 </div>
+
+                 <div class="form-group">
+                     <label for="birthdate"><strong>Geburtsdatum:</strong></label>
+                     <input class="form-control" type="date" name="birthdate" id="birthdate" required/>
+                 </div>
+
+                 <hr/>
+
+                 <div class="form-group">
+                     <label><strong>Adresse:</strong></label>
+                     <div class="row mb-3">
+                         <div class="col">
+                             <input class="form-control" type="text" name="streetname" id="streetname" placeholder="Straßenname" required/>
+                         </div>
+                         <div class="col">
+                             <input class="form-control" type="text" name="streetnumber" id="streetnumber" placeholder="Straßennummer" required/>
+                         </div>
+                     </div>
+                     <div class="row mb-3">
+                         <div class="col">
+                             <input class="form-control" type="text" name="postalcode" id="postalcode" placeholder="PLZ" required/>
+                         </div>
+                         <div class="col">
+                             <input class="form-control" type="text" name="city" id="city" placeholder="Wohnort" required/>
+                         </div>
+                     </div>
+                 </div>
+
+                 <hr/>
+
+                 <div class="form-group">
+                     <label><strong>Passwort:</strong></label>
+                     <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Passwort" required/>
+                     <input class="form-control mb-3" type="password" name="verify-password" id="verify-password" placeholder="Passwort bestätigen" required/>
+                 </div>
+
+                 <hr/>
+             </form>
+         </div>
+
+            <div class="col-lg-6 mb-3">
+              <img class="img-fluid img-thumbnail mx-auto d-block mb-3" src="http://placehold.it/360x360" alt="Profilbild"/>
+              <div class="custom-file mx-auto d-block w-50">
+                  <input class="custom-file-input" type="file" name="picture" id="picture"/>
+                  <label class="custom-file-label" for="picture">Datei auswählen</label>
+              </div>
             </div>
+        </section>
+
+        <button class="btn btn-outline-ice-blue btn-lg mb-3 font-harman-simple" type="submit" name="sign-up" id="sign-up" form="sign-up-form">
+            Registrieren
+        </button>
+
         </div>
     </section>
 
