@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="utf-8"/>
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"/>
 
     <!-- Own CSS Styles -->
-    <link rel="stylesheet" href="css/grayscale.min.css"/>
+    <link rel="stylesheet" href="css/grayscale.css"/>
     <link rel="stylesheet" href="css/master.css"/>
 
     <!-- Web3 Provider -->
@@ -37,7 +37,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Drive & Bye</a>
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <img src="images/dab.png" alt="Drive & Bye" width="60">
+            </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
@@ -45,13 +47,19 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">Über uns</a>
+                        <a class="nav-link js-scroll-trigger" href="discover.html">
+                            <span class="fas fa-search"></span> Entdecken
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#projects">Projekte</a>
+                        <a class="nav-link js-scroll-trigger" href="upload-car.html">
+                            <span class="fas fa-car"></span> Anbieten
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#signup">Kontakt</a>
+                        <a class="nav-link js-scroll-trigger" href="#">
+                            <span class="far fa-user-circle"></span> Anbieten
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -62,54 +70,67 @@
     <header class="masthead">
         <div class="container d-flex h-100 align-items-center">
             <div class="mx-auto text-center">
-                <h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>
-                <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
-                <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+                <h1 class="mx-auto my-0 text-uppercase">Drive & Bye</h1>
+                <h2 class="text-light mx-auto mt-2 mb-5">Teilen leicht gemacht - auch beim Auto</h2>
+                <a href="#projects" class="btn btn-primary js-scroll-trigger">Los Geht's</a>
             </div>
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="about-section text-center">
+    <section id="projects" class="about-section text-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2 class="text-white mb-4">Built with Bootstrap 4</h2>
-                    <p class="text-white-50">Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-                        <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+                    <h2 class="text-white mb-4">Next Generation CarSharing</h2>
+                    <p class="text-white-50">
+                        Unter Anwendung der innovativen Block-Chain-Technologie
+                        setzen wir, im Bereich Car-Sharing, neue Maßstäbe für die Zukunft.
+                        Du benötigst schnell ein Auto? Dann bist du bei <a class="js-scroll-trigger" href="#about">uns</a> genau richtig.
+                        Mit Blick auf eine nachhaltige, gesündere Umwelt ,
+                        vermitteln wir von Privat - an Privat.
                 </div>
             </div>
-            <img src="images/ipad.png" class="img-fluid" alt="">
+        </div>
+    </section>
+
+    <section class="projects-section bg-light">
+        <div class="container">
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                <div class="col-xl-8 col-lg-7">
+                    <img class="img-fluid mb-3 mb-lg-0" src="images/service.jpg" alt="">
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left">
+                        <h4>Risikolose Fahrzeugvermittlung</h4>
+                        <p class="text-black-50 mb-0">
+                            Durch die Zusammenarbeit mit renomierten Versicherungspartnern und KFZ-Werkstätten,
+                            bieten wir Ihnen & Ihrem Auto einen 100% Schutz.
+                            Dank uneres Bewertungssystem & der Verifizierung des Fahrers,
+                            sorgen wir für eine vertrauenswürdige Umgebung - kenne den Fahrer deines
+                            Pkws besser als deinen Nachbarn.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects-section bg-light">
+    <section id="about" class="projects-section bg-light">
         <div class="container">
-
-            <!-- Featured Project Row -->
-            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                <div class="col-xl-8 col-lg-7">
-                    <img class="img-fluid mb-3 mb-lg-0" src="images/bg-masthead.jpg" alt="">
-                </div>
-                <div class="col-xl-4 col-lg-5">
-                    <div class="featured-text text-center text-lg-left">
-                        <h4>Shoreline</h4>
-                        <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
-                    </div>
-                </div>
-            </div>
 
             <!-- Project One Row -->
             <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                <div class="col-lg-6">
-                    <img class="img-fluid" src="images/demo-image-01.jpg" alt="">
+                <div class="col-lg-6 bg-black">
+                    <img class="img-fluid mx-auto d-block" src="images/hasan.jpg" alt="" width="250"/>
                 </div>
                 <div class="col-lg-6">
                     <div class="bg-black text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <h4 class="text-white">Misty</h4>
+                                <h4 class="text-white">Hasan Kerem Karadeniz</h4>
+                                <h5 class="text-muted">CEO - Chief Executive Officer</h5>
                                 <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
                                 <hr class="d-none d-lg-block mb-0 ml-0">
                             </div>
@@ -120,14 +141,15 @@
 
             <!-- Project Two Row -->
             <div class="row justify-content-center no-gutters">
-                <div class="col-lg-6">
-                    <img class="img-fluid" src="images/demo-image-02.jpg" alt="">
+                <div class="col-lg-6 bg-black">
+                    <img class="img-fluid mx-auto d-block" src="images/daniel.jpg" alt="" width="250">
                 </div>
                 <div class="col-lg-6 order-lg-first">
                     <div class="bg-black text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <h4 class="text-white">Mountains</h4>
+                                <h4 class="text-white">Daniel Schulz</h4>
+                                <h5 class="text-muted">CIO - Chief Information Officer</h5>
                                 <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
                                 <hr class="d-none d-lg-block mb-0 mr-0">
                             </div>
@@ -136,21 +158,74 @@
                 </div>
             </div>
 
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                <div class="col-lg-6 bg-black">
+                    <img class="img-fluid mx-auto d-block" src="images/roman.jpg" alt="" width="250"/>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">Roman BOSS Sinkarenko</h4>
+                                <h5 class="text-muted">CMO - Chief Marketing Officer</h5>
+                                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                <hr class="d-none d-lg-block mb-0 ml-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center no-gutters">
+                <div class="col-lg-6 bg-black">
+                    <img class="img-fluid mx-auto d-block" src="images/richard.jpg" alt="" width="350">
+                </div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">Richard Christopher Heinrich</h4>
+                                <h5 class="text-muted">CTO - Chief Technology Officer</h5>
+                                <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                                <hr class="d-none d-lg-block mb-0 mr-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                <div class="col-lg-6 bg-black">
+                    <img class="img-fluid mx-auto d-block" src="images/dardan.png" alt="" width="250"/>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <h4 class="text-white">Dardan Rrafshi</h4>
+                                <h5 class="text-muted">Praktikant - Software Developer</h5>
+                                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                <hr class="d-none d-lg-block mb-0 ml-0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Signup Section -->
-    <section id="signup" class="signup-section">
+    <section class="signup-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto text-center">
 
                     <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                    <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+                    <h2 class="text-white mb-5">Abonnieren Sie unseren Newsletter</h2>
 
                     <form class="form-inline d-flex">
-                        <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-                        <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+                        <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Ihre E-Mail Adresse...">
+                        <button type="submit" class="btn btn-primary mx-auto">Abonnieren</button>
                     </form>
 
                 </div>
@@ -159,7 +234,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section bg-black">
+    <section id="contact" class="contact-section bg-black">
         <div class="container">
 
             <div class="row">
@@ -168,9 +243,9 @@
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
                             <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Address</h4>
+                            <h4 class="text-uppercase m-0">Addresse</h4>
                             <hr class="my-4">
-                            <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                            <div class="small text-black-50">Sonnemannstraße 20<br/>60314 Frankfurt am Main</div>
                         </div>
                     </div>
                 </div>
@@ -182,7 +257,7 @@
                             <h4 class="text-uppercase m-0">Email</h4>
                             <hr class="my-4">
                             <div class="small text-black-50">
-                                <a href="#">hello@yourdomain.com</a>
+                                <a href="mailto:contact@dab.com">contact@dab.com</a>
                             </div>
                         </div>
                     </div>
@@ -192,22 +267,22 @@
                     <div class="card py-4 h-100">
                         <div class="card-body text-center">
                             <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Phone</h4>
+                            <h4 class="text-uppercase m-0">Telefon</h4>
                             <hr class="my-4">
-                            <div class="small text-black-50">+1 (555) 902-8832</div>
+                            <div class="small text-black-50">+49 69 133747-11</div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="social d-flex justify-content-center">
-                <a href="#" class="mx-2">
+                <a href="https://twitter.com/" class="mx-2">
                     <i class="fab fa-twitter"></i>
                 </a>
-                <a href="#" class="mx-2">
+                <a href="https://www.facebook.com/" class="mx-2">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="#" class="mx-2">
+                <a href="https://github.com/Krdnz57/Project-Infinity" class="mx-2">
                     <i class="fab fa-github"></i>
                 </a>
             </div>
@@ -218,7 +293,8 @@
     <!-- Footer -->
     <footer class="bg-black small text-center text-white-50">
         <div class="container">
-            Copyright &copy; Drive & Bye 2018
+            Copyright &copy; Drive & Bye 2018<br/>
+            <a href="impressum.html">Impressum</a>
         </div>
     </footer>
 
