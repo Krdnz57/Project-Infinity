@@ -71,63 +71,71 @@
           <section class="row">
             <div class="col-lg-6 mb-3">
               <form name="sign-up-form" id="sign-up-form">
+
+                <div class="form-group">
+                    <label for=""><strong>Fahzeugbezeichnung</strong></label>
+                    <input class="form-control" name="Fahrzeugbezeichnung" required/>
+                </div>
+
                  <div class="form-group">
-                     <div class="row">
-                         <div class="col">
-                             <label for="firstname"><strong>Vorname:</strong></label>
-                             <input class="form-control" type="text" name="firstname" id="firstname" required/>
-                         </div>
-                         <div class="col">
-                             <label for=""><strong>Nachname:</strong></label>
-                             <input class="form-control" type="text" name="familyname" id="familyname" required/>
-                         </div>
-                     </div>
+                     <label for=""><strong>Baujahr</strong></label>
+                     <input class="form-control" name="Baujahr" required/>
                  </div>
 
                  <div class="form-group">
-                     <label for=""><strong>E-Mail:</strong></label>
-                     <input class="form-control" type="email" name="email" id="email" required/>
+                     <label for=""><strong>Kilometerstand in km</strong></label>
+                     <input class="form-control" name="Kilometerstand" required/>
                  </div>
 
                  <div class="form-group">
-                     <label for="birthdate"><strong>Geburtsdatum:</strong></label>
-                     <input class="form-control" type="date" name="birthdate" id="birthdate" required/>
+                     <label for=""><strong>Hubraum in cm³</strong></label>
+                     <input class="form-control" name="Hubraum" required/>
                  </div>
 
-                 <hr/>
-
                  <div class="form-group">
-                     <label><strong>Adresse:</strong></label>
+                     <label><strong>Leistung</strong></label>
                      <div class="row mb-3">
                          <div class="col">
-                             <input class="form-control" type="text" name="streetname" id="streetname" placeholder="Straßenname" required/>
+                             <input class="form-control"name="Leistung-kW" placeholder="kW" required/>
                          </div>
                          <div class="col">
-                             <input class="form-control" type="text" name="streetnumber" id="streetnumber" placeholder="Straßennummer" required/>
+                             <input class="form-control"name="Leistung-PS"placeholder="PS" required/>
                          </div>
                      </div>
-                     <div class="row mb-3">
-                         <div class="col">
-                             <input class="form-control" type="text" name="postalcode" id="postalcode" placeholder="PLZ" required/>
-                         </div>
-                         <div class="col">
-                             <input class="form-control" type="text" name="city" id="city" placeholder="Wohnort" required/>
-                         </div>
-                     </div>
-                 </div>
+                  </div>
 
-                 <hr/>
+                  <div class="form-group">
+                      <label for=""><strong>Kraftstoffart</strong></label>
+                      <input class="form-control" name="Kraftstoffart" required/>
+                  </div>
 
-                 <div class="form-group">
-                     <label><strong>Passwort:</strong></label>
-                     <input class="form-control mb-3" type="password" name="password" id="password" placeholder="Passwort" required/>
-                     <input class="form-control mb-3" type="password" name="verify-password" id="verify-password" placeholder="Passwort bestätigen" required/>
-                 </div>
+                  <div class="form-group">
+                      <label for=""><strong>Verbrauch</strong></label>
+                      <input class="form-control" name="Verbrauch" required/>
+                  </div>
 
-                 <hr/>
-             </form>
-         </div>
+                  <div class="form-group">
+                      <label><strong>Anzahl Sitzplätze und Türen</strong></label>
+                      <div class="row mb-3">
+                          <div class="col">
+                              <input class="form-control"name="Sitzplätze" placeholder="Sitzplätze z.B. 4" required/>
+                          </div>
+                          <div class="col">
+                              <input class="form-control"name="Türen"placeholder="Türen z.B. 2/3" required/>
+                          </div>
+                      </div>
+                   </div>
 
+                   <div class="form-group">
+                       <label for=""><strong>Getriebe</strong></label>
+                       <input class="form-control" name="Getriebe" required/>
+                   </div>
+
+                   <div class="form-group">
+                       <label for=""><strong>Umweltplakette</strong></label>
+                       <input class="form-control" name="Umweltplakette" required/>
+                   </div>
+                </div>
             <div class="col-lg-6 mb-3">
               <img class="img-fluid img-thumbnail mx-auto d-block mb-3" src="http://placehold.it/360x360" alt="Profilbild"/>
               <div class="custom-file mx-auto d-block w-50">
@@ -135,10 +143,11 @@
                   <label class="custom-file-label" for="picture">Datei auswählen</label>
               </div>
             </div>
+
         </section>
 
         <button class="btn btn-outline-ice-blue btn-lg mb-3 font-harman-simple" type="submit" name="sign-up" id="sign-up" form="sign-up-form">
-            Registrieren
+            Car sharen
         </button>
 
         </div>
