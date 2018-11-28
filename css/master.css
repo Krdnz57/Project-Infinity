@@ -22,3 +22,15 @@ header, nav, aside, main, footer,
 article, section, figure, figcaption {
     display: block;
 }
+
+a:link {
+    color: green;
+}
+a:hover {
+    color: darkblue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.checked {
+    color: orange;
+}
