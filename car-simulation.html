@@ -73,6 +73,11 @@
                 <div class="col-lg-6 mb-3">
                     <form name="unlock-form" id="unlock-form" action="unlock.js" method="post">
                         <div class="form-group">
+                            <label for="km"><strong>Kilometerstand</strong></label>
+                            <input class="form-control" type="text" name="km" id="km" required/>
+                        </div>
+
+                        <div class="form-group">
                             <label for="unlock-pin"><strong>PIN</strong></label>
                             <input class="form-control" type="text" name="unlock-pin" id="unlock-pin" required/>
                         </div>
@@ -88,7 +93,7 @@
 
                     <form name="lock-form" id="lock-form" action="lock.js" method="post">
                         <div class="form-group">
-                            <label for="km"><strong>Kilometer</strong></label>
+                            <label for="km"><strong>Kilometerstand</strong></label>
                             <input class="form-control" type="text" name="km" id="km" required/>
                         </div>
 
